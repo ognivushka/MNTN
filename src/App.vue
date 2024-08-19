@@ -1,12 +1,12 @@
 <script setup lang="ts">
 
-
+import Header from './components/Header.vue'
 </script>
 
 <template>
-  <header class='bg-slate-50'>
-
-  </header>
+  
+  <Header/>
+ 
 
 
 </template>
