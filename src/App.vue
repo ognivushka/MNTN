@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <header>
+  <header class='bg-slate-50'>
 
   </header>
 
