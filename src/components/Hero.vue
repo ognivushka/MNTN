@@ -76,8 +76,19 @@ const showSlide = (index: number) => {
     </div>
     <div class="hero_slider-navigation flex flex-col items-end">
       <div v-for="(slide, index) in slidesData" :key="index">
-        <a href="#" :class="['pr-6', 'pb-5', 'pt-5', 'border-r', 'block']" @click="showSlide(index)">{{ "0" + (index +
-          1) }}</a>
+        <a href="#" :class="[
+          'pr-6',
+          'pb-5',
+          'pt-5',
+          'border-r',
+          'block',
+          'duration-300',
+          { 'border-r-2': slide.active },
+          { 'font-bold': slide.active },
+          { 'text-accent': slide.active },
+        ]" @click="showSlide(index)">
+          {{ "0" + (index + 1) }}
+        </a>
       </div>
     </div>
   </div>
