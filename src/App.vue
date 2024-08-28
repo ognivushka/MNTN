@@ -2,16 +2,21 @@
 import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import anime from "animejs";
+import SocialMedia from "./components/SocialMedia.vue";
 </script>
 
 <template>
-  <div class="background">
+  <div class="background relative">
+    <!-- Social Media Fixed -->
+    <SocialMedia />
     <!-- Header -->
     <header class="px-20 pt-16 pb-48">
       <Header />
     </header>
     <!-- Hero Section -->
-    <Hero />
+    <div class="hero px-20 flex gap-80 justify-end items-center">
+      <Hero />
+    </div>
   </div>
 </template>
 
