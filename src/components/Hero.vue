@@ -49,47 +49,45 @@ const showSlide = (index: number) => {
 </script>
 
 <template>
-  <div class="hero px-20 flex gap-80 justify-end items-center">
-    <div class="hero-slider flex flex-col gap-8">
-      <div v-for="(slide, index) in slidesData" :key="index" v-show="slide.active" :class="[
-        `hero-slide-${index + 1}`,
-        'max-w-4xl',
-        'flex',
-        'flex-col',
-        'gap-8',
-        'overflow-hidden',
-      ]">
-        <div class="flex gap-3 items-center">
-          <div class="w-16 border-t border-accent"></div>
-          <p class="uppercase text-accent tracking-[6px]">{{ slide.subtitle }}</p>
-        </div>
-        <div>
-          <h1 class="text-7xl font-headers capitalize">
-            {{ slide.title }}
-          </h1>
-        </div>
+  <div class="hero-slider flex flex-col gap-8">
+    <div v-for="(slide, index) in slidesData" :key="index" v-show="slide.active" :class="[
+      `hero-slide-${index + 1}`,
+      'max-w-4xl',
+      'flex',
+      'flex-col',
+      'gap-8',
+      'overflow-hidden',
+    ]">
+      <div class="flex gap-3 items-center">
+        <div class="w-16 border-t border-accent"></div>
+        <p class="uppercase text-accent tracking-[6px]">{{ slide.subtitle }}</p>
       </div>
-      <a href="#" class="flex gap-3 items-center">
-        <p>scroll down</p>
-        <img src="/src/components/icons/arrow_downward.png" alt="arrow down" />
-      </a>
+      <div>
+        <h1 class="text-7xl font-headers capitalize">
+          {{ slide.title }}
+        </h1>
+      </div>
     </div>
-    <div class="hero_slider-navigation flex flex-col items-end">
-      <div v-for="(slide, index) in slidesData" :key="index">
-        <a href="#" :class="[
-          'pr-6',
-          'pb-5',
-          'pt-5',
-          'border-r',
-          'block',
-          'duration-300',
-          { 'border-r-2': slide.active },
-          { 'font-bold': slide.active },
-          { 'text-accent': slide.active },
-        ]" @click="showSlide(index)">
-          {{ "0" + (index + 1) }}
-        </a>
-      </div>
+    <a href="#" class="flex gap-3 items-center">
+      <p>scroll down</p>
+      <img src="/src/components/icons/arrow_downward.png" alt="arrow down" />
+    </a>
+  </div>
+  <div class="hero_slider-navigation flex flex-col items-end">
+    <div v-for="(slide, index) in slidesData" :key="index">
+      <a href="#" :class="[
+        'pr-6',
+        'pb-5',
+        'pt-5',
+        'border-r',
+        'block',
+        'duration-300',
+        { 'border-r-2': slide.active },
+        { 'font-bold': slide.active },
+        { 'text-accent': slide.active },
+      ]" @click="showSlide(index)">
+        {{ "0" + (index + 1) }}
+      </a>
     </div>
   </div>
 </template>
