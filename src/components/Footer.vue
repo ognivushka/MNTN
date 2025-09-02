@@ -32,8 +32,6 @@ import { inject } from "vue";
 import type { CommonData } from "../data/types";
 
 const commonData = inject<CommonData>("commonData")!;
-
-console.log(commonData);
 </script>
 
 <style scoped></style>

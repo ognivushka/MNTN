@@ -18,9 +18,18 @@ export interface BlogNavigationItem {
   url: string;
 }
 
+export interface StepData {
+  index: number;
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  link: string;
+}
 export interface CommonData {
   username: string;
   socials: Socials[];
   navigation: NavigationItem[];
   blogNavigation: NavigationItem[];
+  stepsData: StepData[];
 }
