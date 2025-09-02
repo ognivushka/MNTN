@@ -8,8 +8,19 @@ export interface Socials {
   linkedin: SocialLink;
   github: SocialLink;
 }
+export interface NavigationItem {
+  name: string;
+  url: string;
+}
+
+export interface BlogNavigationItem {
+  name: string;
+  url: string;
+}
 
 export interface CommonData {
   username: string;
-  socials: Socials;
+  socials: Socials[];
+  navigation: NavigationItem[];
+  blogNavigation: NavigationItem[];
 }

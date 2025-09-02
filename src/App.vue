@@ -5,6 +5,10 @@
       <SocialMedia :rotate="true" />
     </div>
     <div class="background pb-[400px]">
+      <!-- Menu -->
+      <div class="menu mx-20 pt-10">
+        <Menu />
+      </div>
       <!-- Hero Section -->
       <div class="hero flex gap-80 justify-end items-center h-screen">
         <Hero />
@@ -13,6 +17,10 @@
     <!-- Hero Section -->
     <div class="hiking-steps mx-60">
       <HikingSteps />
+    </div>
+    <!-- Footer Section -->
+    <div class="footer mx-60 mt-52 pb-20">
+      <Footer />
     </div>
   </div>
 </template>
@@ -23,6 +31,8 @@ import common from "./data/common.json";
 import Hero from "./components/Hero.vue";
 import SocialMedia from "./components/SocialMedia.vue";
 import HikingSteps from "./components/HikingSteps.vue";
+import Footer from "./components/Footer.vue";
+import Menu from "./components/Menu.vue";
 import anime from "animejs";
 
 provide("commonData", common);

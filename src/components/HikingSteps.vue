@@ -45,7 +45,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 // import Modal from "./modules/Popup.vue";
 import ImagePopup from "./modules/ImageOpen.vue";

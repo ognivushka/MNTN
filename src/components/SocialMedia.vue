@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 import { inject } from "vue";
-import type { CommonData, Socials } from "../data/types";
+import type { CommonData } from "../data/types";
 
 const commonData = inject<CommonData>("commonData")!;
 

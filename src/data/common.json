@@ -13,5 +13,37 @@
         "name": "github",
         "url": "https://github.com/ognivushka"
     }
-}
+},
+"navigation": [
+    {
+        "name": "About MNTN",
+        "url": "#about"
+    },
+    {
+        "name": "Home",
+        "url": "#"
+    },
+    {
+        "name": "Services",
+        "url": "#services"
+    },
+    {
+        "name": "Contact",
+        "url": "#contact"
+    }
+],
+"blogNavigation": [
+    {
+        "name": "Latest Posts",
+        "url": "#latest-posts"
+    },
+    {
+        "name": "Popular Posts",
+        "url": "#popular-posts"
+    },
+    {
+        "name": "Categories",
+        "url": "#categories"
+    }
+]
 }
