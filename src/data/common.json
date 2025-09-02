@@ -1,0 +1,17 @@
+{
+"username": "ognivushka",
+"socials": {
+    "facebook":{
+        "name": "facebook",
+        "url": "https://www.facebook.com/profile.php?id=100010071483496"
+    },
+    "linkedin":{
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/valeryia-markevich/"
+    },
+    "github":{
+        "name": "github",
+        "url": "https://github.com/ognivushka"
+    }
+}
+}
